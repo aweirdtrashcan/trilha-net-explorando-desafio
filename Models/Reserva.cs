@@ -17,7 +17,7 @@ namespace DesafioProjetoHospedagem.Models
 
         public void CadastrarHospedes(List<Pessoa> hospedes)
         {
-            bool semVagas = Hospedes.Count > Suite.Capacidade;
+            bool semVagas = hospedes.Count > Suite.Capacidade;
             if (!semVagas)
             {
                 Hospedes = hospedes;
