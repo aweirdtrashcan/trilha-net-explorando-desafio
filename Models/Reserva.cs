@@ -1,3 +1,5 @@
+using System.Reflection.Metadata.Ecma335;
+
 namespace DesafioProjetoHospedagem.Models
 {
     public class Reserva
@@ -33,9 +35,7 @@ namespace DesafioProjetoHospedagem.Models
 
         public int ObterQuantidadeHospedes()
         {
-            // TODO: Retorna a quantidade de hóspedes (propriedade Hospedes)
-            // *IMPLEMENTE AQUI*
-            return 0;
+            return Hospedes.Count;
         }
 
         public decimal CalcularValorDiaria()
