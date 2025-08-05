@@ -24,7 +24,7 @@ namespace DesafioProjetoHospedagem.Models
             }
             else
             {
-                throw new Exception($"Não há vagas suficientes para {Hospedes.Count} nessa Suíte.");
+                throw new Exception($"Não há vagas suficientes para {hospedes.Count} nessa Suíte.");
             }
         }
 
